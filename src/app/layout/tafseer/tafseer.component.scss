@@ -1,0 +1,58 @@
+/* الخط المستخدم */
+* {
+  font-family: 'Amiri', serif;
+}
+
+.surah-card {
+  border: none;
+  border-radius: 12px;
+  background: #f4f1e8;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.surah-card:hover {
+  background: #1f3d2b;
+  color: #f4f1e8;
+  // cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(31, 61, 43, 0.3);
+}
+
+/* تنسيق اسم السورة */
+.surah-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c9a34b; /* ذهبي */
+  transition: color 0.3s ease-in-out;
+}
+
+/* تحسين تنسيق رقم السورة */
+.surah-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f3d2b; /* أخضر داكن */
+  background: #c9a34b; /* ذهبي */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* تأثير Hover على رقم السورة */
+.surah-card:hover .surah-number {
+  background: #f4f1e8; /* لون ذهبي فاتح */
+  color: #1f3d2b; /* أخضر داكن */
+}
+
+/* تحسين توزيع النصوص داخل البطاقة */
+.surah-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}

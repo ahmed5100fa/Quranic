@@ -1,0 +1,78 @@
+
+.SelectedSec {
+  background: linear-gradient(135deg, #c9a34bda 0%, #f4f1e8bc 100%), url('../../../../../public/images/tq-bg4.jpg');
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.form-floating .form-control,
+.form-floating .form-select {
+  border: 2px solid #c9a34b;
+  background: #f8f9fa;
+  color: #1f3d2b;
+}
+
+.form-floating label {
+  color: #1f3d2b;
+  font-weight: bold;
+}
+
+.form-floating .form-control:focus,
+.form-floating .form-select:focus {
+  border-color: #1f3d2b;
+  box-shadow: 0 0 10px rgba(31, 61, 43, 0.3);
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+
+/* تحسين زر البحث */
+.btn-custom {
+  background: #1f3d2b;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px solid #c9a34b;
+  transition: all 0.3s ease-in-out;
+}
+
+/* تأثير Hover */
+.btn-custom:hover {
+  background: #c9a34b;
+  color: #1f3d2b;
+  border-color: #1f3d2b;
+  transform: scale(1.05);
+}
+
+
+/* تصميم بطاقة التفسير */
+.tafseer-card {
+  background: #1f3d2b;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* زر نسخ التفسير */
+.btn-copy {
+  background: #c9a34b;
+  color: #1f3d2b;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-copy:hover {
+  background: white;
+  color: #c9a34b;
+}

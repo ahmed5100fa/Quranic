@@ -1,0 +1,53 @@
+<section data-aos="zoom-in">
+  <div class="container mt-5">
+    <div class="row mt-5 p-3">
+      <div class="rounded-4 w-100 p-5 SelectedSec">
+        <div class="container">
+          <div class="row g-3 align-items-center">
+            <!-- قائمة التفسير -->
+            <div class="col-md-6">
+              <div class="form-floating">
+                <select class="form-select rounded-3" id="floatingSelectGrid" aria-label="Floating label select example"  [(ngModel)]="selectedTafseerId">
+                  <option selected>اختر التفسير</option>
+                  @for (item of tafseerNames; track $index) {
+                    <option value="{{$index + 1}}" >{{item.name}}</option>
+                  }
+                </select>
+                <label for="floatingSelectGrid">اختر التفسير</label>
+              </div>
+            </div>
+
+            <!-- رقم الآية -->
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="number" class="form-control rounded-3" id="floatingInput" placeholder="رقم الآية" [(ngModel)]="ayahNumber">
+                <label for="floatingInput">رقم الآية</label>
+              </div>
+            </div>
+
+            <!-- زر البحث -->
+            <div class="col-md-12 text-center mt-3">
+              <button class="btn btn-custom" (click)="getSurahTafseer(selectedTafseerId, surahNumber, ayahNumber)">🔍 بحث</button>
+            </div>
+
+            <!-- قسم عرض التفسير -->
+            <div class="col-md-12 mt-4">
+              @if (surahTafseer) {
+                <div class="tafseer-card">
+                  <h5>📖 {{surahTafseer.tafseer_name}} - الآية {{ surahTafseer.ayah_number }}</h5>
+                  <p #tafseerText class="tafseer-text">
+                    {{ surahTafseer.text }}
+                  </p>
+                  <button class="btn btn-copy" (click)="copyTafseer()">📋 نسخ التفسير</button>
+                </div>
+              }@else {
+                <p class="text-center">لم يتم العثور على التفسير لهذه الاية</p>
+              }
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container w-75 mt-1">
+    <div class="logo d-flex align-items-center">
+      <img src="./images/logo.png" alt="Logo" class="logo-img">
+      <a class="hd navbar-brand text-uppercase fw-bolder" href="#">Quranic</a>
+    </div>
+
+
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown me-4">
+          <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown" data-bs-auto-close="outside">
+            <li><a class="dropdown-item" routerLink="Home" routerLinkActive="active">Home</a></li>
+            <li><a class="dropdown-item" routerLink="Home" fragment="PrayTime">Pray Time</a></li>
+            <li><a class="dropdown-item" routerLink="Home" fragment="Pillars">Pillars</a></li>
+            <li><a class="dropdown-item" routerLink="Home" fragment="Services">Services</a></li>
+            <li><a class="dropdown-item" routerLink="Home" fragment="Contact">Contact</a></li>
+            </ul>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" routerLink="Quran" routerLinkActive="active">Quran</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link"  routerLink="Tafseer" routerLinkActive="active">Tafseer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

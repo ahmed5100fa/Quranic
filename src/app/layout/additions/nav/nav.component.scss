@@ -1,0 +1,68 @@
+/* 🔹 إعدادات عامة */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* 🔹 ستايل اللوجو */
+.logo-img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.hd {
+  font-family: 'Amiri', serif;
+}
+
+/* 🔹 تنسيق عناصر القائمة */
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* 🔹 تحسين خط العناوين */
+.cen {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 تأثير الخط السفلي للروابط */
+.nav-link {
+  position: relative;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* خط السفلي عند التمرير أو التفعيل */
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #008000; /* لون إسلامي أخضر */
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+/* تفعيل الخط السفلي للقسم النشط */
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* 🔹 تحسين زر التوجّل (التبديل) في الشاشات الصغيرة */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler .toggler-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.3s;
+}

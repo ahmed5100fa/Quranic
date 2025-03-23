@@ -1,0 +1,137 @@
+.container-5 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: linear-gradient(#043927e9 , #043927e9) , url('../../../../../public/images/tq-bg4.jpg'); /* Islamic Green */
+  color: #FFD700; /* Golden color */
+  font-family: 'Amiri', serif; /* Arabic-style font */
+  padding: 2rem 0;
+}
+
+//
+
+.container-5 p {
+  font-size: 1rem;
+}
+
+.container-5 .logo h2 {
+  font-size: 1.6rem;
+}
+
+.container-5 .parent-5 {
+  width: 90%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.container-5 .logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.container-5 .logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.container-5 .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-5 h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.container-5 .second .line , .line {
+  width: 100%;
+  border-bottom: 1px solid #FFD700;
+  margin: 0.5rem 0;
+}
+
+.container-5 .second .icons ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  gap: 1rem;
+}
+
+.container-5 .second .icons ul li {
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
+  color: #FFD700;
+  transition: 0.3s;
+}
+
+.container-5 .second .icons ul li:hover {
+  color: #ffffff;
+}
+
+.container-5 .all .subscription .inp input {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  width: 80%;
+  color: #043927;
+  border: none;
+  border-radius: 5px;
+}
+
+.container-5 .all .subscription .inp button {
+  background-color: #FFD700;
+  padding: 0.6rem;
+  border: none;
+  color: #043927;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-5 .all .links ul {
+  list-style-type: none;
+  margin-top: 0.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 0;
+}
+
+.container-5 .all .links ul li {
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 400ms;
+  color: #FFD700;
+}
+
+.container-5 .all .links ul li:hover {
+  transform: translateX(10px);
+  color: #ffffff;
+}
+
+.container-5 .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container-5 .details ul li {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.container-5 .details ul i {
+  color: #FFD700;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
